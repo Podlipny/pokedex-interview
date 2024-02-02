@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "@podlipny/eslint-config/base",
+    "@podlipny/eslint-config/base-react-jsx",
+    "@podlipny/eslint-config/base-typescript",
+    "@podlipny/eslint-config/perf-react-jsx",
+    "@podlipny/eslint-config/app-common"
+  ],
+  "rules": {
+    "import/extensions": "off",
+    "@typescript-eslint/no-use-before-define": ["off"],
+    "react/react-in-jsx-scope": "off",
+    "no-console": "warn",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off"
+  }
+}

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: #4ade80;
+    --primary-hover: #86efac;
+    --primary-foreground: #ffffff;
+    --primary-border: #4ade80;
+  
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: #4ade80;
+
+    --red: #ef4444;
+    --red-foreground: #ffffff;
+    --red-light: #f87171;
+
+    
+    --border: #d1d5db;
+    --input: 240 5.9% 90%;
+    --radius: 0;
+  }
+
+  .dark {
+    // overide dark mode colors
+  }
+}
+
+main {
+  margin: 0 auto;
+  @apply max-w-[1024px];
+}
