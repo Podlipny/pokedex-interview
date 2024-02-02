@@ -37,7 +37,7 @@ export default async function PokemonDetailRoute({ params: { name: pathName } }:
 
           <PokemonDetailSection name={name} />
         </div>
-        {evolutions.length && <PokemonDetailEvolution name={name} />}
+        {evolutions.length ? <PokemonDetailEvolution name={name} /> : null}
       </ApolloClientProvider>
     </main>
   )

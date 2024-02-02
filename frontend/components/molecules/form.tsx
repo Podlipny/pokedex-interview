@@ -8,12 +8,13 @@ import { Filter } from '@/lib/types'
 
 type FormProps = {
   pokemonType: string | null
+  search: string
   types: string[]
   onChange: (filter: Partial<Filter>) => void
 }
 
-export const Form = ({ pokemonType, types, onChange }: FormProps): ReactNode => {
-  const [value, setValue] = useState<string>('')
+export const Form = ({ pokemonType, search, types, onChange }: FormProps): ReactNode => {
+  const [value, setValue] = useState<string>(search)
   const handleSelectChange = useCallback((type: string) => {
     pokemonType !== type && onChange?.({ pokemonType: type })
   }, [pokemonType, onChange])

@@ -15,7 +15,7 @@ type HeaderProps = {
 }
 
 export const Header = memo(({ filter, viewType, pokemonTypes, onChange, onViewChange }: HeaderProps): ReactNode => {
-  const { sectionType, pokemonType } = filter
+  const { search, sectionType, pokemonType } = filter
 
   const handleOnChange = useCallback((updatedFilter: Partial<Filter>) => {
     onChange?.({ ...filter, ...updatedFilter })
@@ -25,7 +25,7 @@ export const Header = memo(({ filter, viewType, pokemonTypes, onChange, onViewCh
     <div className='px-4 lg:px-0 py-4 fixed w-screen max-w-[1024px] bg-white z-50 shadow'>
       <SectionToggle sectionType={sectionType} onChange={handleOnChange} />
       <span className='flex gap-4 pt-4 items-center'>
-        <Form pokemonType={pokemonType} types={pokemonTypes} onChange={handleOnChange} />
+        <Form pokemonType={pokemonType} search={search} types={pokemonTypes} onChange={handleOnChange} />
         <ViewToggle viewType={viewType} onChange={onViewChange} />
       </span>
     </div>
