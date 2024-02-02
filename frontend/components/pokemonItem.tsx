@@ -1,5 +1,3 @@
-'use client'
-
 import { memo } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -11,7 +9,7 @@ import { Pokemon } from '@/lib/types'
 import { cn } from '@/lib/utils'
 
 type PokemonItemProps = {
-  inline: boolean
+  inline?: boolean
 } & Pokemon
 
 export const PokemonItem = memo(({ inline, id, name, image, isFavorite, types }: PokemonItemProps) => (
@@ -22,7 +20,9 @@ export const PokemonItem = memo(({ inline, id, name, image, isFavorite, types }:
     <div className={styles.info}>
       <span>
         <h2>{name}</h2>
-        <p>{types.map((type, index) => `${type}${index !== types.length - 1 ? ', ' : ''}`)}</p>
+        <p>
+          {types?.map((type, index) => `${type}${index !== types.length - 1 ? ', ' : ''}`)}
+        </p>
       </span>
       <FavoriteButton id={id} isFavorite={isFavorite} />
     </div>

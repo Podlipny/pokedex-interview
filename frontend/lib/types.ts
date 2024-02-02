@@ -21,3 +21,23 @@ export type Filter = {
   sectionType: SectionType
   pokemonType: string | null
 }
+
+type unit = {
+  minimum: string
+  maximum: string
+}
+
+export type PokemonDetail = {
+  id: string
+  name: string
+  image: string
+  isFavorite: boolean
+  types: string[]
+  sound: string
+  classification: string
+  maxHP: number
+  maxCP: number
+  weight: unit
+  height: unit
+  evolutions: Pokemon[]
+}

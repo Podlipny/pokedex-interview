@@ -6,11 +6,9 @@ export const GET_POKEMONS = gql`
       edges {
         id
         name
-        classification
         isFavorite
         image
         types
-        classification
       }
     }
   }
@@ -23,9 +21,24 @@ export const GET_POKEMON = gql`
       name
       classification
       isFavorite
-      image
       types
-      classification
+      image
+      maxHP
+      maxCP
+      weight {
+        minimum
+        maximum
+      }
+      height {
+        minimum
+        maximum
+      }
+      evolutions {
+        id
+        name
+        image
+        isFavorite
+      }
     }
   }
 `

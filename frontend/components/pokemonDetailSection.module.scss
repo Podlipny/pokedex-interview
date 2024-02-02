@@ -1,0 +1,43 @@
+.wrapper {
+  @apply flex flex-col bg-secondary w-full;
+  
+  h1 {
+    @apply text-3xl font-medium;
+  }
+
+  h3 {
+    @apply text-base font-medium;
+  }
+
+  p {
+    @apply text-sm;
+  }  
+}
+
+.description {
+  @apply flex flex-row justify-between w-full p-4;
+}
+
+.statistics {
+  @apply flex flex-row items-center gap-4 px-4;
+
+  strong {
+    @apply text-sm min-w-16;
+  }
+
+  div {
+    @apply rounded;
+  }
+}
+
+.metrics {
+  @apply flex w-full pt-4;
+
+  span {
+    @apply flex-1 border-t-2 py-8;
+
+    &:first-child {
+      @apply border-r-2;
+    }
+  }
+}

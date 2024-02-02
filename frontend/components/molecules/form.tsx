@@ -2,8 +2,7 @@ import { ChangeEvent, MouseEvent, ReactNode, useCallback, useMemo, useState } fr
 import debounce from 'lodash/debounce'
 import { XMarkIcon } from '@heroicons/react/24/solid'
 
-import { Input } from '../atoms/input'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../atoms/select'
+import { Input, Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../atoms'
 
 import { Filter } from '@/lib/types'
 

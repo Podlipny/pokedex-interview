@@ -3,8 +3,7 @@
 import { useQuery } from '@apollo/client'
 import { memo, useCallback } from 'react'
 
-import { List } from './molecules/list'
-import { Header } from './molecules/header'
+import { List, Header } from './molecules'
 
 import { usePokedexStore } from '@/lib/store'
 import { Filter, SectionType, ViewType } from '@/lib/types'

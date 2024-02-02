@@ -31,6 +31,9 @@ function createApolloClient() {
         Pokemon: {
           keyFields: ['name'],
         },
+        PokemonByName: {
+          keyFields: ['name'],
+        },
       },
     }),
   })
