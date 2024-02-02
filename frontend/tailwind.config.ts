@@ -13,10 +13,6 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px',
-      },
     },
     extend: {
       // example of theming by extending colors form css variables
@@ -32,7 +28,7 @@ const config = {
           border: 'var(--primary-border)',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
+          DEFAULT: 'var(--secondary)',
           foreground: 'var(--secondary-foreground)',
         },
         red: {

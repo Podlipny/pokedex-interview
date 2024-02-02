@@ -1,0 +1,7 @@
+.base {
+  @apply flex h-10 w-full rounded-md border border-border bg-secondary px-3 py-2 text-sm
+    text-secondary-foreground file:border-0 file:text-sm file:font-medium
+    placeholder:text-secondary-foreground placeholder:opacity-60
+    ring-border focus-visible:ring-2 focus-visible:outline-none 
+    disabled:cursor-not-allowed disabled:opacity-50
+}
