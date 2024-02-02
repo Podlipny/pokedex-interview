@@ -25,6 +25,7 @@ export const GET_POKEMON = gql`
       image
       maxHP
       maxCP
+      sound
       weight {
         minimum
         maximum
